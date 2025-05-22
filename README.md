@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movie Recommendation System
+
+A Next.js application that helps users discover movies based on their preferences and provides detailed information from IMDB.
+
+## Features
+
+- Interactive Q&A system to understand user preferences
+- Genre-based movie recommendations
+- Detailed movie information from IMDB including:
+  - Ratings
+  - Cast
+  - Plot summaries
+  - Release dates
+  - And more!
+
+## How It Works
+
+1. **User Preferences**: Answer simple questions about your movie preferences
+2. **Genre Selection**: Get personalized genre recommendations based on your answers
+3. **Movie Discovery**: Browse through curated movie suggestions from your preferred genres
+4. **IMDB Integration**: View comprehensive movie details sourced from IMDB
 
 ## Getting Started
 
@@ -14,23 +34,52 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to start discovering movies!
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Setup Requirements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js version 18 or above
+- npm, yarn, pnpm, or bun package manager
+- Gemini API key
 
-To learn more about Next.js, take a look at the following resources:
+### Environment Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd movie-recos
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
 
-## Deploy on Vercel
+3. Create a `.env` file in the root directory and add your Gemini API key:
+```env
+GEMINI_API_KEY=your_api_key_here
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [IMDB API](https://imdb-api.com/) - Movie database integration
+- [Gemini API](https://ai.google.dev/) - AI-powered recommendations
+- Modern UI components for an engaging user experience
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
