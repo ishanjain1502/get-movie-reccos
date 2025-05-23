@@ -99,7 +99,7 @@ const Answers = ({ answers }) => {
       </div>
 
       <div className="mt-8">
-        <h3 className="text-xl font-bold text-indigo-900 mb-4">Recommended Movies on Netflix India</h3>
+        <h3 className="text-xl font-bold text-indigo-900 mb-4">Recommended Movies & shows</h3>
         {loading ? (
           <div className="flex items-center justify-center p-4">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
